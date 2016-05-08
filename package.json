@@ -1,0 +1,32 @@
+{
+  "name": "web-coockpit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle-watch": "tcm --watch src & tsc -p src --watch & node tools/make-bundle.js src/application.js webroot/bundle.js webroot/css/bundle.css",
+    "compile": "tsc -p src && echo 'done'",
+    "bundle": "browserify src/application.js -o webroot/bundle.js",
+    "build": "npm run compile && npm run bundle",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hiram K. Hackenbacker",
+  "license": "Unlicense",
+  "dependencies": {
+    "co": "^4.6.0",
+    "d3": "^3.5.17",
+    "immutable": "^3.8.1",
+    "react": "15.0.2",
+    "react-dom": "15.0.2",
+    "react-grid-layout": "^0.12.1",
+    "ts-events": "^3.1.1"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "css-modulesify": "^0.23.0",
+    "regenerator": "^0.8.45",
+    "typed-css-modules": "^0.1.6",
+    "typescript": "^1.8.10",
+    "watchify": "^3.7.0"
+  }
+}

@@ -1,0 +1,12 @@
+.root
+{
+    height: 100%;
+    display: flex;
+}
+
+.gridItem
+{
+    display: flex;
+    background-color: white;
+    box-shadow: 0 0 5px lightgray;
+}

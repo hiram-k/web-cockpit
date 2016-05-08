@@ -1,0 +1,16 @@
+{
+	// Controls the font size.
+	"editor.fontSize": 8,
+    
+	// The number of spaces a tab is equal to.
+	"editor.tabSize": 4,
+	
+	"files.exclude": {
+		"**/.git": true,
+		"**/.DS_Store": true,
+		"src/**/*.map": true,
+		"src/**/*.css.d.ts": true,
+		"src/**/*.js": { "when": "$(basename).ts"},
+		"**/*?.js": { "when": "$(basename).tsx"}
+	}
+}
